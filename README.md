@@ -1,7 +1,8 @@
-# SQL Murder Mystery — Reporte 
+# SQL Murder Mystery
 
 **Actividad:** SQL Murder Mystery  
-**Detective:** Laura Vanessa Botero Gil 
+
+**Detective** Laura Vanessa Botero Gil
 
 ---
 
@@ -25,7 +26,7 @@ AND city = 'SQL City';
 ```
 
 **Buscaba** Encontrar el recorte del crimen ocurrido en SQL City para tener información del caso 
-**Descubrí** Existia un único crimen en ese día. El reporte mencionaba a dos testigos: uno que vivía en el último número de la calle Northwestern Dr, y la otra se llamaba Annabel y vivia en Franklin Ave.
+**Descubri** Existia un unico asesinato para la fecha en la ciudad.El reporte mencionaba a dos terstigos y la forma en la cual se podían encontrar, pues uno vivía en el ultimo numero de la calla Northwestern Dr, y la otra se llamaba Annabel y vivia en Franklin Ave.
 
 ---
 
@@ -50,7 +51,7 @@ FROM person
 WHERE address_street_name LIKE 'Franklin Ave' AND name LIKE '%Anna%';
 ```
 
-**Buscaba* Encontrar todos los datos de la testigo llamada Annabel que vive en Franklin Ave.  
+**Buscaba** Encontrar todos los datos de la testigo llamada Annabel que vive en Franklin Ave. 
 **Descubrí** Los datos completos de la  testigo **Annabel Miller**, para consultar su testimonio.
 
 ---
@@ -64,7 +65,8 @@ JOIN interview AS i
 WHERE name LIKE 'Morty Schapiro' OR name LIKE 'Annabel Miller';
 ```
 
-**Buscaba?** Conocer las declaraciones de los  testigos para obtener pistas sobre el caso, inicialmente pensé que alguno de los dos podría ser un farsante, pero al ver las declaraciones ambas coincidian con la descripción de un hombre.  
+**Buscaba** Conocer las declaraciones de los testigos para obtener pistas sobre el caso, inicialmente pensé que alguno podía ser un farsante,pero al revisar las declaraciones ambas coincidian con otra persona
+
 **Descubrí**  
 - **Annabel Miller** vio al asesino en el gimnasio *Get Fit Now* el **9 de enero de 2018**, y su membresía empieza con `48Z`.  
 - **Morty Schapiro** vio al sospechoso huir en un carro cuya placa contenía `H42W`, y era un miembro Gold del gimnasio.
@@ -126,7 +128,7 @@ WHERE d.hair_color LIKE 'red'
 ```
 
 **Buscaba** Identificar mujeres en la base de datos que coincidan con la descripción física dada por Jeremy Bowers.  
-**Descubrí** Tres posibles sospechosas: **Red Korb**, **Regina George** y **Miranda Priestly**. Por lo cual pasé a verificar cuál asistió al concierto tres veces.
+**Descubrí** Tres posibles sospechosas: **Red Korb**, **Regina George** y **Miranda Priestly**. Por lo cual pasé a verificar la asistencia al evento.
 
 ---
 
